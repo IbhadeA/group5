@@ -9,11 +9,250 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Merienda:wght@300..900&family=Noto+Sans+Tamil+Supplement&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Reem+Kufi+Fun:wght@400..700&family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+        /* Announcement ribbon styles */
+        .announcement-ribbon {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            font-family: var(--font-family);
+            text-align: center;
+            cursor: pointer;
+        }
+
+        /* Hover effect for the announcement ribbon */
+        .announcement-ribbon:hover {
+            background-color: darkred; /* Changes background color to darker red when hovered over */
+        }
+
+        /* Background image container styles */
+        .hero-section {
+            background-image: url('/group5/images/image\ \(00\).jpeg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px;
+            text-align: left;
+            color: white;
+            height: 70vh;
+            min-height: 516px;
+        }
+
+        /* Hero section text box styles */
+        .hero-text {
+            /* background-color: white; */
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        /* Button styles */
+        .btn-donate {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .btn-donate:hover {
+            background-color: white;
+            color: red;
+            border: 1px solid red;
+        }
+
+        /* Styles for small screens */
+        @media (max-width: 767px) {
+            /* Add a white background to the text */
+            .text-container {
+                background-color: white;
+                padding: 10px;
+                border-radius: 5px;
+                text-align: center;
+            }
+
+            /* Change the text color */
+            .text-container h1,
+            .text-container p {
+                color: black;
+            }
+        }
+
+    .custom-heading {
+        font-size: 2.5rem; /* Font size of 2.5rem */
+        line-height: 2.75rem; /* Line height of 2.75rem */
+    }
+
+    .custom-text {
+        font-size: 1.5rem; /* Set the font size */
+        line-height: 2rem; /* Set the line height */
+    }
+
+    /* Section with two columns styles */
+        .section {
+            padding: 50px 20px;
+        }
+
+    /* Card styles */
+        .card {
+            border: none;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .card-title {
+            color: red;
+            font-weight: bold;
+        }
+
+        .card-text {
+            margin-bottom: 20px;
+        }
+
+        .btn-outline-red {
+            border: 1px solid red;
+            color: red;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .btn-outline-red:hover {
+            background-color: red;
+            color: white;
+        }
+
+        /* Ensure the images maintain a consistent aspect ratio and are contained within their parent */
+        .card-img-top {
+            object-fit: cover;
+        }
+
+    /* Style for each card to ensure equal height */
+    .card {
+        height: 100%;
+        }
+
+    /* Custom button width for smaller screens */
+    @media (max-width: 576px) {
+    .btn {
+        width: 100%;
+    }
+    }
+    </style>
 </head>
 <body>
     <!-- Navbar starts here -->
     <!-- Navbar ends here -->
     <!-- Content starts here -->
+     <!-- Announcement ribbon -->
+     <div class="announcement-ribbon">
+        After a distressing event: information for communities, parents and caregivers  >
+    </div>
+
+    <!-- Hero section with background image -->
+    <!-- <div class="hero-section">
+        <div class="hero-text">
+            <h1 style="color: red;">Make a Lasting Impact</h1>
+            <p style="color: black;">Your kindness can change lives</p>
+            <button class="btn btn-red">Donate Today</button>
+        </div>
+    </div> -->
+    <div class="hero-section">
+        <div class="container">
+            <div class="row">
+                <!-- Column for hero text and button -->
+                <div class="col-md-6 d-flex flex-column justify-content-center align-items-start">
+                    <!-- Text container for small screens -->
+                    <div class="text-container mt-5">
+                        <h1 class="mb-3 fw-bold custom heading">Make a Lasting <br>Impact</h1>
+                        <p class="custom-text">Your kindness can change lives</p>
+                        <!-- Button -->
+                    <button class="btn btn-donate mt-3">Donate Today</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Section with two columns -->
+    <div class="container section">
+        <div class="row">
+            <!-- Column 1 -->
+            <div class="mb-2 col-12 col-md-6 col-lg-6 left">
+                <div class="card border border-tertiary">
+                    <img src="/group5/images/image (02).webp" alt="Someone donating" class="card-img-top w-100 h-100">
+                    <div class="card-body text-start">
+                        <a href="#" class="text-decoration-none text-dark">
+                        <h5 class="card-title fs-6 mb-2 p-1">RED CROSS SHOPS</h5>
+                        </a>
+                        <a href="#" class="text-decoration-none text-dark">
+                            <h4 class="card-text fw-bold mb-2 p-1">Donate your best so we can do ours.</h4>
+                        </a>
+                        <p class="card-text text-secondary mb-4 p-1 ">Right now, Australian Red Cross Shops need your quality clothing and accessories to raise funds for people facing hardship, crisis, and disaster.</p>
+                        <div class="mt-4">
+                            <button class="btn btn-outline-red w-100 w-auto">Learn More</button>
+                    </div>
+                 </div>
+               </div>
+            </div>
+            
+            <!-- Column 2 -->
+            <div class="mb-2 col-12 col-md-6 col-lg-6 left">
+                <div class="card border border-tertiary">
+                    <img src="/group5/images/image (03).webp" alt="Flodded Bridge" class="card-img-top w-100 h-100">
+                    <div class="card-body text-start">
+                        <a href="#" class="text-decoration-none text-dark">
+                        <h5 class="card-title fs-6 mb-2 p-1">EMERGENCIES</h5>
+                        </a>
+                        <a href="#" class="text-decoration-none text-dark">
+                            <h4 class="card-text fw-bold mb-2 p-1">In an emergency every second counts. Are you prepared?</h4>
+                        </a>
+                        <p class="card-text text-secondary mb-4 p-1">This summer saw an increase in severe weather: higher than expected flooding, earlier cyclones, and extreme heat. You can prepare for extreme weather with our Get Prepared app.</p>
+                        <div class="mt-4">
+                            <button class="btn btn-outline-red w-100 w-auto">Find out more</button>
+                    </div>
+                 </div>
+               </div>
+            </div>
+        
+     <!-- Section with two columns -->
+     <div class="container section">
+        <div class="row">
+            <!-- Column 1 -->
+            <div class="mb-2 col-12 col-md-6 col-lg-6 left">
+                <div class="card border border-tertiary">
+                    <img src="/group5/images/Image (4).png" alt="Someone donating" class="card-img-top w-100 h-100">
+                    <div class="card-body text-start">
+                        <a href="#" class="text-decoration-none text-dark">
+                        <h5 class="card-title fs-6 mb-2 p-1">UPDATE</h5>
+                        </a>
+                        <a href="#" class="text-decoration-none text-dark">
+                            <h4 class="card-text fw-bold mb-2 p-1">Israel and the Occupied Palestinian Territories</h4>
+                        </a>
+                        <p class="card-text text-secondary mb-4 p-1"></p>
+                        <div class="mt-4">
+                            <button class="btn btn-outline-red w-100 w-auto">Learn more</button>
+                    </div>
+                 </div>
+               </div>
+            </div>
+            
+            <!-- Column 2 -->
+            <div class="mb-2 col-12 col-md-6 col-lg-6 left">
+                <div class="card border border-tertiary">
+                    <img src="/group5/images/image(05).jpeg" alt="3 Friends" class="card-img-top w-100 h-100">
+                    <div class="card-body text-start">
+                        <a href="#" class="text-decoration-none text-dark">
+                        <h5 class="card-title fs-6 mb-2 p-1">COMMUNITY SUPPORT</h5>
+                        </a>
+                        <a href="#" class="text-decoration-none text-dark">
+                            <h4 class="card-text fw-bold mb-2 p-1">Helping young people in crisis feel human again</h4>
+                        </a>
+                        <p class="card-text text-secondary mb-4 p-1">Our Night Café is a safe after-hours space for people aged 12 to 25 experiencing or at risk of homelessness in Brisbane.</p>
+                        <div class="mt-4">
+                            <button class="btn btn-outline-red w-100 w-auto">Read more</button>
+                    </div>
+                 </div>
+               </div>
+            </div>
+    </div>
     <!-- Content ends here -->
     <!-- Footer starts here -->
     <!-- Footer ends here -->
